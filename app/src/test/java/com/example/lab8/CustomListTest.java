@@ -2,8 +2,6 @@ package com.example.lab8;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
-
 
 //import org.junit.Before;
 import org.junit.jupiter.api.BeforeAll;
