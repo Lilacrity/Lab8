@@ -1,4 +1,4 @@
-package com.example.lab8;
+package com.example.myapplication;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,12 +12,12 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class CustomList extends ArrayAdapter<City> {
+public class CustomList extends ArrayAdapter<com.example.myapplication.City> {
 
-    private ArrayList<City> cities;
+    private ArrayList<com.example.myapplication.City> cities;
     private Context context;
 
-    public CustomList(Context context, ArrayList<City> cities) {
+    public CustomList(Context context, ArrayList<com.example.myapplication.City> cities) {
         super(context, 0, cities);
         this.cities = cities;
         this.context = context;
@@ -33,7 +33,7 @@ public class CustomList extends ArrayAdapter<City> {
             view = LayoutInflater.from(context).inflate(R.layout.content, parent,false);
         }
 
-        City city = cities.get(position);
+        com.example.myapplication.City city = cities.get(position);
 
         TextView cityName = view.findViewById(R.id.city_text);
         TextView provinceName = view.findViewById(R.id.province_text);
@@ -54,7 +54,7 @@ public class CustomList extends ArrayAdapter<City> {
      *the second phase, you can add the
      city * @param city
      */
-    public void addCity(City city){
+    public void addCity(com.example.myapplication.City city){
         cities.add(city);
     }
 

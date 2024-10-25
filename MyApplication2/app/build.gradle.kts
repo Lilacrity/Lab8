@@ -37,7 +37,12 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    testImplementation(libs.junit)
+    testImplementation(libs.junit.junit)
+    //testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
+    //androidTestImplementation(libs.espresso.core)
+    testImplementation ("org.junit.jupiter:junit-jupiter-api:5.0.1")
+    //testImplementation(libs.junit.junit)
+    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.0.1")
     androidTestImplementation(libs.espresso.core)
 }

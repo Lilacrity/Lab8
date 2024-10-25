@@ -1,10 +1,13 @@
-package com.example.lab8;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.myapplication.City;
+import com.example.myapplication.CustomList;
 
 import java.util.ArrayList;
 
